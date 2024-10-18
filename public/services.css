@@ -1,0 +1,143 @@
+.fieldset {
+    border: 10px solid #000;
+    padding: 20px;
+    /* Optional: Add padding to give some space between content and border */
+}
+
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+.plans img {
+    width: 100%;
+    height: 500px;
+    opacity: 0.5;
+}
+
+
+.navbar-nav .nav-link {
+    color: whitesmoke !important;
+}
+
+.navbar {
+    background-color: black;
+    color: whitesmoke;
+}
+
+.h1 {
+    font-family: serif;
+}
+
+.table {
+    align-items: center;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 10px solid white;
+    /* Set border width to 3px and color to #ff0080 */
+    border-style: solid;
+}
+
+tr:hover {
+    background-color: #ffa366;
+    /* Lighter background color on hover */
+    opacity: 2.5;
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+th {
+    color: #ff0080;
+    padding: 10px;
+    background-color: white;
+}
+
+td {
+    font-size: 16px;
+    font-family: arial;
+    padding: 8px;
+}
+
+.marque {
+    background-color: black;
+}
+
+.scrolling-class {
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    display: inline-block;
+    background-color: yellow;
+}
+
+.scrolling-class {
+    overflow-y: auto;
+    height: fit-content;
+    /* Set the height of the scrolling area */
+    animation: scroll 20s linear infinite;
+}
+
+.scrolling-content {
+    position: absolute;
+    bottom: 0;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+/*footer section */
+.footer-section {
+    background-color: black;
+    color: white;
+    /* Set the text color to white */
+}
+
+.footer-section img {
+    height: 150px;
+}
+
+@media only screen and (min-width: 350px) and (max-width: 580px) {
+    .scrolling-class {
+        display: none;
+    }
+
+    .table {
+        font-size: 12px;
+    }
+
+    .navbar img {
+        width: 80%;
+        /* Adjust as needed */
+        max-width: 200px;
+        /* Limit maximum width */
+        height: auto;
+    }
+
+    .navbar .navbar-toggler-icon {
+        background-color: black;
+
+    }
+
+    .navbar button {
+        background-color: white;
+    }
+
+    .navbar-nav {
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Change color of navbar items */
+
+}
